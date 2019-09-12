@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         martiniButton.layer.cornerRadius = cornerRadius
         wineButton.layer.cornerRadius = cornerRadius
         restartButton.layer.cornerRadius = cornerRadius
+        countLabel.text = "\(count)"
     }
 
     @IBAction func countDrinks(_ sender: Any) {

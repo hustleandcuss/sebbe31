@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sebbe31" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-qN-rwO">
+                                <rect key="frame" x="0.0" y="221" width="414" height="454"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6VM-tm-KUq">
+                                        <rect key="frame" x="36.5" y="0.0" width="341" height="176"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkO-iP-7Zg">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="88"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw0-sF-xQH">
+                                                        <rect key="frame" x="8" y="8" width="325" height="72"/>
+                                                        <color key="backgroundColor" red="1" green="0.67558250050000002" blue="0.95285231469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="🍺"/>
+                                                        <connections>
+                                                            <action selector="countDrinks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2J-2T-JFI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cr9-k6-U9L">
+                                                <rect key="frame" x="0.0" y="88" width="341" height="88"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHy-ye-MO3">
+                                                        <rect key="frame" x="8" y="8" width="160" height="72"/>
+                                                        <color key="backgroundColor" red="1" green="0.67558250050000002" blue="0.95285231469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="     🍸     "/>
+                                                        <connections>
+                                                            <action selector="countDrinks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXQ-MW-dXj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1O-J6-iDh">
+                                                        <rect key="frame" x="173" y="8" width="160" height="72"/>
+                                                        <color key="backgroundColor" red="1" green="0.67558250050000002" blue="0.95285231469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="     🍷     "/>
+                                                        <connections>
+                                                            <action selector="countDrinks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNa-SQ-6mp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cr9-k6-U9L" secondAttribute="trailing" id="ESX-SH-Bsj"/>
+                                            <constraint firstAttribute="trailing" secondItem="IkO-iP-7Zg" secondAttribute="trailing" id="QaM-0F-lbJ"/>
+                                            <constraint firstItem="cr9-k6-U9L" firstAttribute="leading" secondItem="6VM-tm-KUq" secondAttribute="leading" id="wUa-rp-Ut5"/>
+                                            <constraint firstItem="IkO-iP-7Zg" firstAttribute="leading" secondItem="6VM-tm-KUq" secondAttribute="leading" id="zQD-MR-lcY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WON!! 💫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NGf-Ua-rob">
+                                        <rect key="frame" x="2" y="255" width="410" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <color key="textColor" red="1" green="0.42336042130000001" blue="0.78546729670000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trc-LM-fxo">
+                                        <rect key="frame" x="138.5" y="406" width="137" height="48"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title=" RESTART ">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqy-W3-k78"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NGf-Ua-rob" secondAttribute="trailing" constant="2" id="41Q-ut-Zvr"/>
+                                    <constraint firstItem="NGf-Ua-rob" firstAttribute="leading" secondItem="ygr-qN-rwO" secondAttribute="leading" constant="2" id="zGu-uN-89o"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sebbe31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIp-hH-MZR">
+                                <rect key="frame" x="154" y="44" width="106" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ygr-qN-rwO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cid-Lx-Lrt"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="ygr-qN-rwO" secondAttribute="trailing" id="HS3-YY-0hu"/>
+                            <constraint firstItem="FIp-hH-MZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ceB-W9-Grq"/>
+                            <constraint firstItem="ygr-qN-rwO" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="kE3-0w-tcs"/>
+                            <constraint firstItem="ygr-qN-rwO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rIH-Un-wgJ"/>
+                            <constraint firstItem="FIp-hH-MZR" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="xvE-Jg-Blt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="beerButton" destination="Aw0-sF-xQH" id="JYx-8A-hf3"/>
+                        <outlet property="countLabel" destination="NGf-Ua-rob" id="vn5-2b-oc6"/>
+                        <outlet property="martiniButton" destination="EHy-ye-MO3" id="XJI-Qk-5kr"/>
+                        <outlet property="restartButton" destination="trc-LM-fxo" id="xHD-NN-S2P"/>
+                        <outlet property="wineButton" destination="q1O-J6-iDh" id="p6b-Me-fQ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

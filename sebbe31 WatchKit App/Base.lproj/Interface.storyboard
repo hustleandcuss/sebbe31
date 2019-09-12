@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="sebbe31_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="🍺" id="Pc3-mv-HFs">
+                            <color key="backgroundColor" red="1" green="0.67558250053440694" blue="0.95285231469235254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="29"/>
+                            <connections>
+                                <action selector="countDrinks" destination="AgC-eL-Hgc" id="dTE-Ae-BZu"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="🍷" id="R6J-dO-wJ2">
+                            <color key="backgroundColor" red="1" green="0.67558250053440694" blue="0.95285231469235254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="29"/>
+                            <connections>
+                                <action selector="countDrinks" destination="AgC-eL-Hgc" id="FAM-eF-n6v"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="🍸" id="QWU-QR-Mcq">
+                            <color key="backgroundColor" red="1" green="0.67558250053440694" blue="0.95285231469235254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="29"/>
+                            <connections>
+                                <action selector="countDrinks" destination="AgC-eL-Hgc" id="Ht4-9s-lmP"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="35" alignment="left" text="0" textAlignment="center" baselineAdjustment="alignCenters" id="mUR-Ef-RgA">
+                            <color key="textColor" red="1" green="0.42336042125165674" blue="0.78546729671985671" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="25"/>
+                        </label>
+                        <button width="1" alignment="left" title="RESTART" id="ai6-jT-VB6">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                            <connections>
+                                <action selector="restart" destination="AgC-eL-Hgc" id="hqr-0P-kaq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="countLabel" destination="mUR-Ef-RgA" id="7F9-zR-I8N"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+</document>
